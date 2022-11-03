@@ -3,15 +3,15 @@ body {
     border: 0;
     padding: 0;
     color: #CFCFCF;
-    background-color: #1e1e1e;
+    background-color: #000000;
     text-align: center;
-    font-family: "Open Sans", sans-serif;
+    font-family: "OCR A Std", monospace;
 }
 
 a {
     text-decoration: none;
     font-size: 1.2rem;
-    color: #60C689;
+    color: #00a2ff;
 }
 
 p {
@@ -21,7 +21,7 @@ p {
 
 strong {
     font-size: 1.3rem;
-    color: #60C689;
+    color: #00a2ff;
 }
 
 li {
@@ -31,17 +31,17 @@ li {
 
 h1 {
     font-size: 4rem;
-    color: #60C689;
+    color: #00a2ff;
 }
 
 h2 {
     font-size: 3rem;
-    color: #60C689;
+    color: #00a2ff;
 }
 
 .tdLeft {
     padding: 5px;
-    color: #60C689;
+    color: #00a2ff;
     text-align: right;
 }
 
@@ -58,7 +58,7 @@ h2 {
     a {
         text-decoration: none;
         font-size: 1rem;
-        color: #60C689;
+        color: #00a2ff;
     }
 
     p {
@@ -68,7 +68,7 @@ h2 {
 
     strong {
         font-size: 1.1rem;
-        color: #60C689;
+        color: #00a2ff;
     }
 
     li {
@@ -97,7 +97,7 @@ h6 {
 
 a:hover .project-image {
     transform: scale(1.03);
-    outline: 2px solid #60C689;
+    outline: 4px solid #00a2ff;
     outline-offset: 2px;
 }
 
@@ -107,12 +107,12 @@ a:hover .project-image {
 }
 
 .navbar-link:hover {
-    color: #60C689 !important;
+    color: #00a2ff !important;
 }
 
 .project-header {
     font-size: 2rem;
-    color: #60C689;
+    color: #00a2ff;
     text-transform: uppercase;
     font-weight: bold;
 }
@@ -178,7 +178,7 @@ a:hover .project-image {
 }
 
 .intro-link:hover {
-    color: #60C689;
+    color: #00a2ff;
 }
 
 .intro-li {
