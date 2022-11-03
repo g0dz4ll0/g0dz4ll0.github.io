@@ -1,63 +1,66 @@
 setInterval(ChangeImage, 5000);
 
-const caelumImages = [
-    "https://img.itch.zone/aW1hZ2UvMTYzNTMzMy85NjQxNTAyLnBuZw==/original/lRx807.png",
-    "https://img.itch.zone/aW1hZ2UvMTYzNTMzMy8xMDAzMjY5Ni5wbmc=/original/iJ%2BZ4P.png",
-    "https://img.itch.zone/aW1hZ2UvMTYzNTMzMy8xMDAzMjcwMy5wbmc=/original/MWpPdE.png",
-    "https://img.itch.zone/aW1hZ2UvMTYzNTMzMy8xMDAzMjY5NS5wbmc=/original/yxqid8.png",
-    "https://img.itch.zone/aW1hZ2UvMTYzNTMzMy8xMDAzMjY5Ny5wbmc=/original/me5luK.png",
-    "https://img.itch.zone/aW1hZ2UvMTYzNTMzMy8xMDAzMjcwMi5wbmc=/original/NZ4On8.png",
-    "https://img.itch.zone/aW1hZ2UvMTYzNTMzMy8xMDAzMjcwMC5wbmc=/original/%2BheRw9.png",
-    "https://img.itch.zone/aW1hZ2UvMTYzNTMzMy8xMDAzMjY5OS5wbmc=/original/jNrOgc.png",
-    "https://img.itch.zone/aW1hZ2UvMTYzNTMzMy8xMDAzMjY5OC5wbmc=/original/4Ip8FA.png"
+const batlleForKurundanImages = [
+    "https://img.itch.zone/aW1hZ2UvMTEwMDg3Mi82MzU1MTA2LnBuZw==/347x500/4FJV7t.png",
+    "https://img.itch.zone/aW1hZ2UvMTEwMDg3Mi82MzU1MTA4LnBuZw==/347x500/VCTMAb.png",
+    "https://img.itch.zone/aW1hZ2UvMTEwMDg3Mi82MzU1MTA3LnBuZw==/347x500/apHIY3.png",
+    "https://img.itch.zone/aW1hZ2UvMTEwMDg3Mi82MzU1MTA5LnBuZw==/347x500/rnp%2BgD.png"
 ];
 
-const ctrlEscImages = [
-    "https://img.itch.zone/aW1hZ2UvMTEwMTYwOS82MzU0NTIzLnBuZw==/original/OyAWVx.png",
-    "https://img.itch.zone/aW1hZ2UvMTEwMTYwOS82MzU0NTA2LnBuZw==/original/8MrZyM.png",
-    "https://img.itch.zone/aW1hZ2UvMTEwMTYwOS82MzU0NTA5LnBuZw==/original/w8UoMk.png",
-    "https://img.itch.zone/aW1hZ2UvMTEwMTYwOS82MzU0NTA1LnBuZw==/original/MrrG9u.png",
-    "https://img.itch.zone/aW1hZ2UvMTEwMTYwOS82MzU0NTI1LnBuZw==/original/gg%2BooF.png"
+const criticalPathImages = [
+    "https://img.itch.zone/aW1hZ2UvMTM4MzAwNi84MDU1NzExLnBuZw==/347x500/EGb9zF.png",
+    "https://img.itch.zone/aW1hZ2UvMTM4MzAwNi84MDU1NzE2LnBuZw==/347x500/tvTnSg.png",
+    "https://img.itch.zone/aW1hZ2UvMTM4MzAwNi84MDU1NzEyLnBuZw==/347x500/82YVlf.png",
+    "https://img.itch.zone/aW1hZ2UvMTM4MzAwNi84MDU1NzEzLnBuZw==/347x500/9Iv0bm.png",
+    "https://img.itch.zone/aW1hZ2UvMTM4MzAwNi84MDU1NzE1LnBuZw==/347x500/VN476n.png",
+    "https://img.itch.zone/aW1hZ2UvMTM4MzAwNi84MDU1ODM4LnBuZw==/347x500/P9PIwc.png",
+    "https://img.itch.zone/aW1hZ2UvMTM4MzAwNi84MDU1ODM5LnBuZw==/347x500/3fulk9.png"
 ];
 
-const mutantPizzasImages = [
-    "https://img.itch.zone/aW1hZ2UvMTAyNjk5MS81ODU3Nzk0LnBuZw==/original/P%2F1P9q.png",
-    "https://img.itch.zone/aW1nLzU4NTc4ODUucG5n/original/5Auf%2Bi.png",
-    "https://img.itch.zone/aW1hZ2UvMTAyNjk5MS81ODU3NzkzLnBuZw==/original/oYkG6T.png",
-    "https://img.itch.zone/aW1hZ2UvMTAyNjk5MS81ODY5MzExLnBuZw==/original/YcOWxH.png",
-    "https://img.itch.zone/aW1hZ2UvMTAyNjk5MS81ODY5MzEzLnBuZw==/original/FsQ3bv.png"
+const projectEImages = [
+    "https://img.itch.zone/aW1hZ2UvMTYyNjM3Ni85NTUyMzg1LnBuZw==/347x500/u%2Bv6%2Fc.png",
+    "https://img.itch.zone/aW1hZ2UvMTYyNjM3Ni85NTUyMzg0LnBuZw==/347x500/yiDLdY.png",
+    "https://img.itch.zone/aW1hZ2UvMTYyNjM3Ni85NTUyMzg4LnBuZw==/347x500/fPDeVg.png",
+    "https://img.itch.zone/aW1hZ2UvMTYyNjM3Ni85NTUyMzg3LnBuZw==/347x500/%2FhI3%2BP.png",
+    "https://img.itch.zone/aW1hZ2UvMTYyNjM3Ni85NTUyMzg2LnBuZw==/347x500/5Y2nPn.png",
+    "https://img.itch.zone/aW1hZ2UvMTYyNjM3Ni85NTUyMzg5LnBuZw==/347x500/DIx8Zm.png",
+    "https://img.itch.zone/aW1hZ2UvMTYyNjM3Ni85NTUyMzk1LnBuZw==/347x500/nWs8mD.png",
+    "https://img.itch.zone/aW1hZ2UvMTYyNjM3Ni85NTUyNDAwLnBuZw==/347x500/PIwffx.png",
+    "https://img.itch.zone/aW1hZ2UvMTYyNjM3Ni85NTUyNDA4LnBuZw==/347x500/mGEMjB.png",
+    "https://img.itch.zone/aW1hZ2UvMTYyNjM3Ni85NTUyNDIzLnBuZw==/347x500/eObMFM.png"
 ];
 
-const gladePartyImages = [
-    "https://bnz05pap001files.storage.live.com/y4mXPqpYtDqJS2ujpZXXLNGPhLO7KWgiL0dAI2wdq9NKOIqyh__seIUCawu2Jz1e0mhtes-VovrrJ2-haPiYuqI-fivUl4E4YbvUl48BVG3tZfM7n0Yc_PRShSZhcHnNxgTLcv0m3IBNW1zymMr_90p-ag9UYeLTJj7Cln28CFVn-4hJR3fLwLyBehYNA4J8JqQyVu16_3dgwY5y6vMpUcX5g?encodeFailures=1&width=1569&height=883",
-    "https://bnz05pap001files.storage.live.com/y4m41V7_nimdGWYrx6MtjSxKh10tNWrQLrV2aoFIzwAULgEg_1B8sHSV7I9kmZ_OqXeLxb2W2fZaQeznmfJ8Suait0KTVytmIc7ynjxYTOIDOJJySa_lzvQIud-a6x2bXcFmVMpdLnMXLnm1-Fxz76-70QENRuBLlE-aMcGm5MZxyjDdhSDOrYBNAZhGJB6X4d5HHnavDLLlikNEFSnZjcdzw?encodeFailures=1&width=1569&height=883",
-    "https://bnz05pap001files.storage.live.com/y4mmBVu0mQQ3VUIbcyy8qW2u_4A5F8MhBH8gYll_r-HWMzYc82J0PXcK1evneiJAek_Tp9ZVzME3IHUxW0KMfsvN5bEn-ujNfAarbIFB5xlSbOgvd8_-XtZg8D49p0H4LkLyKeEL_7zfZoirNettIuAFOIvEeVx27V00al6r-u3v3FDwpD37xzBD-JvPnYKnfkJCR96HVpltY98DX00EOyzHQ?encodeFailures=1&width=1569&height=883",
-    "https://bnz05pap001files.storage.live.com/y4m46brSNcJA6P_LBL78uIjeKxXwyYTwgZFqF9eJhpNmfrW7K6x0ZE3rG_1KPs8X7wYcyf2fSFuybsBhEBgTy-bEO7DIxuuHU09L4i3tLfWeyGDx_Te0-BwtWgWX_z4ss4lJxWwA-JTnG4L-SbIAzGxeCK9QbuwE0OhtJe0xfzu6p0sZmy40o14Xyy9n5UT2gfbSccVIeSBsmAq_jo3ZPZABw?encodeFailures=1&width=1236&height=699",
-    "https://bnz05pap001files.storage.live.com/y4mobSGljL6Si1Kj9W3IQb-o3kXRGkL_L3NSSbADlAIt67UZ2IGEyoq0D7_DOjTP3u6xSsctmr6ekbUPfhu03FLSTVMmYx1c8iKO5Z2Y1minKrTSZuesQYsk_GtoYmL8_90zzoQWMbSna8H-DlsxnZRJdQZxbGyt3f0JKuPGrIgq2949NwzngEP6wNNvIm-kGUKevsEEQldWNWBgl3FKiujvg?encodeFailures=1&width=1237&height=697",
-    "https://bnz05pap001files.storage.live.com/y4mJTC46Kog8nfb5g5cZAbpVvFfSYpxhmWMX79bMgPbmHrdp6ETdbg7nn4ejpl9FP_M1iUyVIlSy3WYpYZ1Kyujmx6J9w6pKPhAOEvEzK4uO8yvVdpYexnE4FgB_UlB6xoOmsBmVdmQ-etf5oL1NXuyeEVl4SnZfqlZKOQPquCPR49y-4M4HvzlT0v186TzWt5FRNFTc-_4gLbu-lnTPQfPCQ?encodeFailures=1&width=1230&height=695",
-    "https://bnz05pap001files.storage.live.com/y4mmrDoLcd2DMF-mTMC_Lv_V3eOWiR7CM2jPXXAnVzci5IWMPYXuK3VL8G7zGSDOytnDLwtD2Z2t9Y4xeyOTrRhT2kJg-zKqBjGRhMMOyVFTEyu8xfn1EveB6QjHovtMz_UgghpqBu19MRM0RGUM2AARo3W-2txnA-kKAp0OvlLPW-clSHunXSREGjo3oKb9P4DYyQZb83STbBylx5m03aI8A?encodeFailures=1&width=1240&height=701",
-    "https://bnz05pap001files.storage.live.com/y4mm6AbLXaTwpzO2AQ9ODi0vxs-Ahv921_26kPaK6VfBooqS0f6GrGqtU8BJq6q9Lsl40nhQvRujAsQsGStc3C1PTEbjmfkG6bflzDo7xPeHaKkRv6o3Hrgi48el0UI-eX2l4QARu4-opgtndDZ3FV585_3kKH8-AmmrFJ2LmSfCaMSQY2uIR-b_f9iEFQnIVk6ErNQCM3Fw6qGuWzPVAYLDg?encodeFailures=1&width=1238&height=700"
+const aspargoKnightImages = [
+    "https://img.itch.zone/aW1hZ2UvMTAwOTIwNi81NzQ5NjU1LnBuZw==/347x500/w%2BNS6Q.png",
+    "https://img.itch.zone/aW1hZ2UvMTAwOTIwNi81NzQ5NjU2LnBuZw==/347x500/sH5I9L.png",
+    "https://img.itch.zone/aW1hZ2UvMTAwOTIwNi81NzQ5NjYxLnBuZw==/347x500/vNNjlV.png",
+    "https://img.itch.zone/aW1hZ2UvMTAwOTIwNi81NzQ5NjU4LnBuZw==/347x500/mHPZEV.png",
+    "https://img.itch.zone/aW1hZ2UvMTAwOTIwNi81NzQ5NjYwLnBuZw==/347x500/cCFzC8.png",
+    "https://img.itch.zone/aW1hZ2UvMTAwOTIwNi81NzQ5NjU3LnBuZw==/347x500/ntmQTq.png",
+    "https://img.itch.zone/aW1hZ2UvMTAwOTIwNi81NzQ5NjU5LnBuZw==/347x500/IvRpGP.png",
+    "https://img.itch.zone/aW1hZ2UvMTAwOTIwNi81NzQ5NjYzLnBuZw==/347x500/UfbIpK.png",
+    "https://img.itch.zone/aW1hZ2UvMTAwOTIwNi81NzQ5NjYyLnBuZw==/347x500/1E1Aq%2F.png"
 ];
 
 let currentImageIndex = 0;
 let switcher = 0;
 
 let images = []
-if(document.URL.includes("caelum.html"))
+if(document.URL.includes("projecte.html"))
 {
-    images = caelumImages;
+    images = projectEImages;
 }
-else if(document.URL.includes("ctrlesc.html"))
+else if(document.URL.includes("battleforkurundan.html"))
 {
-    images = ctrlEscImages;
+    images = battleForKurundanImages;
 }
-else if(document.URL.includes("mutantpizzas.html"))
+else if(document.URL.includes("criticalpath.html"))
 {
-    images = mutantPizzasImages;
+    images = criticalPathImages;
 }
-else if(document.URL.includes("gladeparty.html"))
+else if(document.URL.includes("aspargoknight.html"))
 {
-    images = gladePartyImages;
+    images = aspargoKnightImages;
 }
 
 function ChangeImage() {
