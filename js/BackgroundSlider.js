@@ -1,6 +1,6 @@
 setInterval(ChangeImage, 5000);
 
-const batlleForKurundanImages = [
+const battleForKurundanImages = [
     "https://img.itch.zone/aW1hZ2UvMTEwMDg3Mi82MzU1MTA2LnBuZw==/347x500/4FJV7t.png",
     "https://img.itch.zone/aW1hZ2UvMTEwMDg3Mi82MzU1MTA4LnBuZw==/347x500/VCTMAb.png",
     "https://img.itch.zone/aW1hZ2UvMTEwMDg3Mi82MzU1MTA3LnBuZw==/347x500/apHIY3.png",
