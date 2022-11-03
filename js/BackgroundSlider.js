@@ -42,6 +42,32 @@ const aspargoKnightImages = [
     "https://img.itch.zone/aW1hZ2UvMTAwOTIwNi81NzQ5NjYyLnBuZw==/347x500/1E1Aq%2F.png"
 ];
 
+const singularityImages = [
+    "https://img.itch.zone/aW1hZ2UvMTMwOTI2My83NjMyMTYwLnBuZw==/347x500/mcDXP1.png",
+    "https://img.itch.zone/aW1hZ2UvMTMwOTI2My83NjMyMTYxLnBuZw==/347x500/M1NaMb.png",
+    "https://img.itch.zone/aW1hZ2UvMTMwOTI2My83NjMyMTYzLnBuZw==/347x500/rS4slc.png",
+    "https://img.itch.zone/aW1hZ2UvMTMwOTI2My83NjMyMTY0LnBuZw==/347x500/xS3Hjj.png",
+    "https://img.itch.zone/aW1hZ2UvMTMwOTI2My83NjMyMTYyLnBuZw==/347x500/HEdlOz.png"
+];
+
+const allNaturalImages = [
+    "https://img.itch.zone/aW1hZ2UvMTA1MTQzMC82MDEzOTMwLnBuZw==/347x500/wNKtiG.png",
+    "https://img.itch.zone/aW1hZ2UvMTA1MTQzMC82MDEzOTMxLnBuZw==/347x500/Io7uEA.png",
+    "https://img.itch.zone/aW1hZ2UvMTA1MTQzMC82MDEzOTM0LnBuZw==/347x500/PWUP%2Bq.png",
+    "https://img.itch.zone/aW1hZ2UvMTA1MTQzMC82MDEzOTM2LnBuZw==/347x500/xJNlU4.png",
+    "https://img.itch.zone/aW1hZ2UvMTA1MTQzMC82MDEzOTMyLnBuZw==/347x500/hQj1TI.png",
+    "https://img.itch.zone/aW1hZ2UvMTA1MTQzMC82MDEzOTMzLnBuZw==/347x500/m2Um%2FU.png",
+    "https://img.itch.zone/aW1hZ2UvMTA1MTQzMC82MDEzOTM1LnBuZw==/347x500/fXx4oz.png"
+];
+
+const callOfPetsImages = [
+    "https://img.itch.zone/aW1hZ2UvMTY4MTI5OC85OTAxNzM0LnBuZw==/347x500/wAcDbH.png",
+    "https://img.itch.zone/aW1hZ2UvMTY4MTI5OC85OTAxNzQ0LnBuZw==/347x500/Dlm0YF.png",
+    "https://img.itch.zone/aW1hZ2UvMTY4MTI5OC85OTAxNzg5LnBuZw==/347x500/bRkZMx.png",
+    "https://img.itch.zone/aW1hZ2UvMTY4MTI5OC85OTAxNzM2LnBuZw==/347x500/8GV6lQ.png",
+    "https://img.itch.zone/aW1hZ2UvMTY4MTI5OC85OTAxNzIxLnBuZw==/347x500/126wsb.png"
+];
+
 let currentImageIndex = 0;
 let switcher = 0;
 
@@ -61,6 +87,18 @@ else if(document.URL.includes("criticalpath.html"))
 else if(document.URL.includes("aspargoknight.html"))
 {
     images = aspargoKnightImages;
+}
+else if(document.URL.includes("singularity.html"))
+{
+    images = singularityImages;
+}
+else if(document.URL.includes("allnatural.html"))
+{
+    images = allNaturalImages;
+}
+else if(document.URL.includes("callofpets.html"))
+{
+    images = callOfPetsImages;
 }
 
 function ChangeImage() {
