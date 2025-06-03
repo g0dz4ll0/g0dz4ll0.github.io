@@ -1,6 +1,7 @@
-body {
+/* GLOBAL STYLES */
+html, body {
+    height: 100%;
     margin: 0;
-    border: 0;
     padding: 0;
     color: #CFCFCF;
     background-color: #000000;
@@ -14,7 +15,7 @@ a {
     color: #00a2ff;
 }
 
-p {
+p, li {
     font-size: 1.2rem;
     color: #CFCFCF;
 }
@@ -22,11 +23,6 @@ p {
 strong {
     font-size: 1.3rem;
     color: #00a2ff;
-}
-
-li {
-    font-size: 1.2rem;
-    color: #CFCFCF;
 }
 
 h1 {
@@ -39,117 +35,64 @@ h2 {
     color: #00a2ff;
 }
 
-.tdLeft {
-    padding: 5px;
-    color: #00a2ff;
-    text-align: right;
-}
-
-.tdRight {
-    padding: 5px;
-    text-align: left;
-}
-
-@media screen and (max-width: 400px) {
-    h1 {
-        font-size: 2.5rem !important;
-    }
-
-    a {
-        text-decoration: none;
-        font-size: 1rem;
-        color: #00a2ff;
-    }
-
-    p {
-        font-size: 1rem;
-        color: #CFCFCF;
-    }
-
-    strong {
-        font-size: 1.1rem;
-        color: #00a2ff;
-    }
-
-    li {
-        font-size: 1rem;
-        color: #CFCFCF;
-    }
-}
-
 h6 {
     font-size: 1.2rem;
     color: #9E9E9E;
 }
 
+/* BACKGROUND VIDEO */
 .backgroundVideo {
-    width: 100%;
-    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: -1;
 }
 
-.project-image {
-    width: 95%;
-    aspect-ratio: 16/9;
-    border-radius: 25px;
-    transition-duration: 0.2s;
-    transition-property: transform;
+/* INTRO SECTION */
+.intro {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
 }
 
-a:hover .project-image {
-    transform: scale(1.03);
-    outline: 4px solid #00a2ff;
-    outline-offset: 2px;
+.intro-h1 {
+    font-size: 5rem;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+    font-weight: bold;
+    text-shadow: 2px 2px #000000;
 }
 
-.navbar-link {
-    transition-duration: 0.3s;
-    transition-property: background-color;
-}
-
-.navbar-link:hover {
-    color: #00a2ff !important;
-}
-
-.project-header {
+.intro-link {
+    color: #FFFFFF;
     font-size: 2rem;
+}
+
+.intro-link:hover {
     color: #00a2ff;
+}
+
+.intro-li {
+    display: inline-block;
     text-transform: uppercase;
     font-weight: bold;
+    text-shadow: 2px 2px #000000;
+    margin: 0;
 }
 
-.project-text {
-    font-size: 1.15rem;
-    margin-left: 5%;
-    margin-right: 5%;
-    color: #bbbbbb;
-}
+/* MOBILE ADAPTATIONS */
+@media screen and (max-width: 400px) {
+    h1 {
+        font-size: 2.5rem !important;
+    }
 
-.siteSection {
-    box-shadow: 0 0 5px 5px rgb(97, 192, 255, 20%);
-    width: 75%;
-    margin: 35px auto 0px;
-    padding: 10px;
-}
-
-.sectionHeader {
-    margin: 0px auto 15px;
-    /*background: #202020;
-    border-radius: 50px;*/
-}
-
-.sectionHeader-text {
-    font-weight: bold;
-    text-transform: uppercase;
-}
-
-.itch-io-frame {
-    --itch-io-frame-size: 2;
-    width: calc(552px * var(--itch-io-frame-size));
-    height: calc(167px * var(--itch-io-frame-size));
-}
-
-.footer {
-    background-color: rgba(20, 20, 20, 1);
+    a, p, strong, li {
+        font-size: 1rem;
+    }
 }
 
 @media screen and (max-width: 1280px) {
@@ -172,31 +115,85 @@ a:hover .project-image {
     display: none;
 }
 
-.intro-link {
-    color:#FFFFFF;
+/* PROJECT STYLING */
+.project-image {
+    width: 95%;
+    aspect-ratio: 16/9;
+    border-radius: 25px;
+    transition: transform 0.2s;
+}
+
+a:hover .project-image {
+    transform: scale(1.03);
+    outline: 4px solid #00a2ff;
+    outline-offset: 2px;
+}
+
+.project-header {
     font-size: 2rem;
-}
-
-.intro-link:hover {
     color: #00a2ff;
-}
-
-.intro-li {
-    display: inline-block;
     text-transform: uppercase;
     font-weight: bold;
-    text-shadow: 2px 2px #000000;
-    margin: 0;
 }
 
-.intro-h1 {
-    font-size: 5rem;
-    transform: translate(-50%, -50%);
-    text-transform: uppercase;
+.project-text {
+    font-size: 1.15rem;
+    margin: 0 5%;
+    color: #bbbbbb;
+}
+
+/* SECTIONS */
+.siteSection {
+    box-shadow: 0 0 5px 5px rgba(97, 192, 255, 0.2);
+    width: 75%;
+    margin: 35px auto 0;
+    padding: 10px;
+}
+
+.sectionHeader {
+    margin: 0 auto 15px;
+    /* background: #202020;
+    border-radius: 50px; */
+}
+
+.sectionHeader-text {
     font-weight: bold;
-    text-shadow: 2px 2px #000000;
+    text-transform: uppercase;
 }
 
+.itch-io-frame {
+    --itch-io-frame-size: 2;
+    width: calc(552px * var(--itch-io-frame-size));
+    height: calc(167px * var(--itch-io-frame-size));
+}
+
+/* NAVIGATION */
+.navbar-link {
+    transition: background-color 0.3s;
+}
+
+.navbar-link:hover {
+    color: #00a2ff !important;
+}
+
+/* TABLE STYLING */
+.tdLeft {
+    padding: 5px;
+    color: #00a2ff;
+    text-align: right;
+}
+
+.tdRight {
+    padding: 5px;
+    text-align: left;
+}
+
+/* FOOTER */
+.footer {
+    background-color: rgba(20, 20, 20, 1);
+}
+
+/* ANIMATIONS */
 @keyframes fadeOut {
     from {opacity: 0}
     to {opacity: 1}
@@ -237,98 +234,75 @@ a:hover .project-image {
     animation: fadeInUp .01s forwards;
 }
 
+/* FONTS */
 @font-face {
     font-family: 'robotoblack';
     src: url('font/roboto-black-webfont.woff2') format('woff2'),
-    url('font/roboto-black-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+         url('font/roboto-black-webfont.woff') format('woff');
 }
 
 @font-face {
     font-family: 'robotoblack_italic';
     src: url('font/roboto-blackitalic-webfont.woff2') format('woff2'),
-    url('font/roboto-blackitalic-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+         url('font/roboto-blackitalic-webfont.woff') format('woff');
 }
 
 @font-face {
     font-family: 'robotobold';
     src: url('font/roboto-bold-webfont.woff2') format('woff2'),
-    url('font/roboto-bold-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+         url('font/roboto-bold-webfont.woff') format('woff');
 }
 
 @font-face {
     font-family: 'robotobold_italic';
     src: url('font/roboto-bolditalic-webfont.woff2') format('woff2'),
-    url('font/roboto-bolditalic-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+         url('font/roboto-bolditalic-webfont.woff') format('woff');
 }
 
 @font-face {
     font-family: 'robotoitalic';
     src: url('font/roboto-italic-webfont.woff2') format('woff2'),
-    url('font/roboto-italic-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+         url('font/roboto-italic-webfont.woff') format('woff');
 }
 
 @font-face {
     font-family: 'robotolight';
     src: url('font/roboto-light-webfont.woff2') format('woff2'),
-    url('font/roboto-light-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+         url('font/roboto-light-webfont.woff') format('woff');
 }
 
 @font-face {
     font-family: 'robotolight_italic';
     src: url('font/roboto-lightitalic-webfont.woff2') format('woff2'),
-    url('font/roboto-lightitalic-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+         url('font/roboto-lightitalic-webfont.woff') format('woff');
 }
 
 @font-face {
     font-family: 'robotomedium';
     src: url('font/roboto-medium-webfont.woff2') format('woff2'),
-    url('font/roboto-medium-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+         url('font/roboto-medium-webfont.woff') format('woff');
 }
 
 @font-face {
     font-family: 'robotomedium_italic';
     src: url('font/roboto-mediumitalic-webfont.woff2') format('woff2'),
-    url('font/roboto-mediumitalic-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+         url('font/roboto-mediumitalic-webfont.woff') format('woff');
 }
 
 @font-face {
     font-family: 'robotoregular';
     src: url('font/roboto-regular-webfont.woff2') format('woff2'),
-    url('font/roboto-regular-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+         url('font/roboto-regular-webfont.woff') format('woff');
 }
 
 @font-face {
     font-family: 'robotothin';
     src: url('font/roboto-thin-webfont.woff2') format('woff2'),
-    url('font/roboto-thin-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+         url('font/roboto-thin-webfont.woff') format('woff');
 }
 
 @font-face {
     font-family: 'robotothin_italic';
     src: url('font/roboto-thinitalic-webfont.woff2') format('woff2'),
-    url('font/roboto-thinitalic-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+         url('font/roboto-thinitalic-webfont.woff') format('woff');
 }
